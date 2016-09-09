@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>conpinion-tooltip-icon attributes tests</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <script src='../lib/webcomponentsjs/webcomponents-lite.min.js'></script>
+  <script src="../lib/web-component-tester/browser.js"></script>
+  <script src="../lib/test-fixture/test-fixture-mocha.js"></script>
+  <script src="../lib/coffee-script/extras/coffee-script.js"></script>
+  <link rel="import" href="../lib/test-fixture/test-fixture.html">
+  <link rel="import" href="../build/conpinion-tooltip-icon.html">
+</head>
+
+<body>
+
+  <test-fixture id="element">
+    <template>
+      <conpinion-tooltip-icon></conpinion-tooltip-icon>
+    </template>
+  </test-fixture>
+
+  <script type="text/coffeescript">
+
+    element = null
+
+    describe 'attributes', ->
+
+      beforeEach -> element = fixture 'element'
+
+      it 'should have no description', ->
+        expect(element.description).to.be.undefined
+
+      it 'should display the "help" icon by default', ->
+        expect(element.icon).to.eq 'help'
+
+  </script>
+
+</body>
+
+</html>

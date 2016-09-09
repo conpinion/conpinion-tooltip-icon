@@ -1,0 +1,33 @@
+<!-- build:process -->
+<!--
+<%= copyright %>
+Element: <%= pkg.name %>
+Version: <%= pkg.version %>
+Description: <%= pkg.description %>
+-->
+<!-- /build -->
+
+<link rel="import" href="../lib/iron-icon/iron-icon.html">
+<link rel="import" href="../lib/iron-icons/iron-icons.html">
+<link rel="import" href="../lib/paper-tooltip/paper-tooltip.html">
+
+<dom-module id="conpinion-tooltip-icon">
+
+  <template>
+
+    <!-- build:style inline conpinion-tooltip-icon -->
+    <link href="conpinion-tooltip-icon.css" rel="stylesheet">
+    <!-- /build -->
+
+    <div id="tipicon">
+      <iron-icon id="icon" icon="[[icon]]"></iron-icon>
+      <paper-tooltip for="icon">[[description]]</paper-tooltip>
+    </div>
+
+  </template>
+
+  <!-- build:script inline conpinion-tooltip-icon -->
+  <script src="conpinion-tooltip-icon.js"></script>
+  <!-- /build -->
+
+</dom-module>

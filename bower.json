@@ -1,0 +1,43 @@
+{
+  "name": "conpinion-tooltip-icon",
+  "description": "An icon with a tooltip",
+  "version": "0.1.2",
+  "main": "conpinion-tooltip-icon.html",
+  "license": "MIT",
+  "ignore": [
+    "bin",
+    "build",
+    "lib",
+    "node_modules",
+    "src",
+    "test",
+    "tmpl",
+    "package.json",
+    "**/.*",
+    "**/*.log",
+    "**/*.sublime-*",
+    "atlassian-ide-plugin.xml"
+  ],
+  "keywords": [
+    "web-components"
+  ],
+  "authors": [
+    "Tim Völpel <tim.voelpel@conpinion.de>"
+  ],
+  "homepage": "https://github.com/conpinion/conpinion-tooltip-icon",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conpinion/conpinion-tooltip-icon.git"
+  },
+  "dependencies": {
+    "iron-icon": "PolymerElements/iron-icon#^1.0.2",
+    "iron-icons": "PolymerElements/iron-icons#^1.0.3",
+    "paper-tooltip": "PolymerElements/paper-tooltip#^1.0.1"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "jquery": "^2.1.4",
+    "web-component-tester": "Polymer/web-component-tester#^3.3.21",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0"
+  }
+}
